@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 
 setuptools.setup(
-    name="django-subdomains",
+    name="dj-subdomains",
     version="0.0.1",
     description="Subdomains middleware for django project",
     url="https://github.com/gabrielloliveira/django-subdomains",
