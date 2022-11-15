@@ -9,6 +9,7 @@ BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 def boot_django():
     settings.configure(
         BASE_DIR=BASE_DIR,
+        SECRET_KEY="abc",
         DEBUG=True,
         DATABASES={
             "default": {
@@ -19,5 +20,7 @@ def boot_django():
         INSTALLED_APPS=("subdomains",),
         TIME_ZONE="UTC",
         USE_TZ=True,
+        ROOT_URLCONF="subdomains.urls",
+        MIDDLEWARE=("subdomains.middleware.SubdomainMiddleware",),
     )
     django.setup()
