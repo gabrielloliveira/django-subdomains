@@ -2,6 +2,10 @@
 
 A simple application to get which subdomain the django project has been accessed.
 
+## Installation
+
+- `pip install -e git+https://github.com/gabrielloliveira/django-subdomains`
+
 ## Configuration
 
 - Set any subdomain access in allowed hosts = `ALLOWED_HOSTS=[".example.com"]`
