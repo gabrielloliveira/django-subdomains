@@ -15,4 +15,4 @@ class Subdomain(BaseModel):
     name = models.CharField(max_length=255, help_text=_("help name to set subdomain"), blank=True, null=True)
 
     def __str__(self):
-        return f"{self.subdomain} | {self.name}".rstrip("| ").strip()
+        return f"{self.subdomain} | {self.name}".rstrip("| None").strip()
