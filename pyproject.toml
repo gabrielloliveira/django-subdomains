@@ -5,7 +5,7 @@ description = ""
 authors = ["gabrielloliveira <gabrielloliveira097@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "django_subdomains"}]
+packages = [{include = "subdomains"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
